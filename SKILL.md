@@ -1,17 +1,17 @@
 ---
-name: continual-learning-scratchpad
+name: napkin
 description: |
-  Maintain a per-repo scratchpad file that tracks mistakes, corrections, and
-  what works. Activates EVERY session, unconditionally. Read the scratchpad
+  Maintain a per-repo napkin file that tracks mistakes, corrections, and
+  what works. Activates EVERY session, unconditionally. Read the napkin
   before doing anything. Write to it continuously as you work — not just at
   session boundaries. Log your own mistakes, not just user corrections. The
-  scratchpad lives in the repo at `.claude/SCRATCHPAD.md`.
+  napkin lives in the repo at `.claude/napkin.md`.
 author: Codex
-version: 4.0.0
+version: 5.0.0
 date: 2026-02-06
 ---
 
-# Continual Learning Scratchpad
+# Napkin
 
 You maintain a per-repo markdown file that tracks mistakes, corrections, and
 patterns that work or don't. You read it before doing anything and update it
@@ -21,14 +21,14 @@ continuously as you work — whenever you learn something worth recording.
 
 ## Session Start: Read Your Notes
 
-First thing, every session — read `.claude/SCRATCHPAD.md` before doing anything
+First thing, every session — read `.claude/napkin.md` before doing anything
 else. Internalize what's there and apply it silently. Don't announce that you
 read it. Just apply what you know.
 
-If no scratchpad exists yet, create one at `.claude/SCRATCHPAD.md`:
+If no napkin exists yet, create one at `.claude/napkin.md`:
 
 ```markdown
-# Scratchpad
+# Napkin
 
 ## Corrections
 | Date | Source | What Went Wrong | What To Do Instead |
@@ -52,7 +52,7 @@ consume.
 
 ## Continuous Updates
 
-Update the scratchpad as you work, not just at session start and end. Write to
+Update the napkin as you work, not just at session start and end. Write to
 it whenever you learn something worth recording:
 
 - **You hit an error and figure out why.** Log it immediately. Don't wait.
@@ -63,10 +63,10 @@ it whenever you learn something worth recording:
 - **You try something and it fails.** Log the approach and why it didn't work
   so you don't repeat it.
 - **You try something and it works well.** Log the pattern.
-- **You re-read the scratchpad mid-task** because you're about to do something
+- **You re-read the napkin mid-task** because you're about to do something
   you've gotten wrong before. Good. Do this.
 
-The scratchpad is a living document. Treat it like working memory that persists
+The napkin is a living document. Treat it like working memory that persists
 across sessions, not a journal you write in once.
 
 ## What to Log
@@ -84,7 +84,7 @@ Log anything that would change your behavior if you read it next session:
 Be specific. "Made an error" is useless. "Assumed the API returns a list but
 it returns a paginated object with `.items`" is actionable.
 
-## Scratchpad Maintenance
+## Napkin Maintenance
 
 Every 5-10 sessions, or when the file exceeds ~150 lines, consolidate:
 
@@ -94,7 +94,7 @@ Every 5-10 sessions, or when the file exceeds ~150 lines, consolidate:
 - Archive resolved or outdated notes.
 - Keep total length under 200 lines of high-signal content.
 
-A 50-line scratchpad of hard-won rules beats a 500-line log of raw entries.
+A 50-line napkin of hard-won rules beats a 500-line log of raw entries.
 
 ## Example
 
@@ -111,5 +111,5 @@ wrong order. You catch it yourself. Log it:
 | 2026-02-06 | user | Used relative imports | This repo uses absolute imports from `src/` — always |
 ```
 
-**Later** — you re-read the scratchpad before editing another file and use
+**Later** — you re-read the napkin before editing another file and use
 absolute imports without being told. That's the loop working.
