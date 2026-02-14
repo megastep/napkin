@@ -86,8 +86,11 @@ it returns a paginated object with `.items`" is actionable.
 
 ## Napkin Maintenance
 
-Every 5-10 sessions, or when the file exceeds ~150 lines, consolidate:
+Compact the napkin regularly to preserve tokens — long napkins are read every
+session and consume context. Every 5-10 sessions, or when the file exceeds
+~150 lines, consolidate:
 
+- Consolidate into minimal entries: one concise line per rule or correction.
 - Merge redundant entries into a single rule.
 - Promote repeated corrections to User Preferences.
 - Remove entries that are now captured as top-level rules.
