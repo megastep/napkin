@@ -21,7 +21,7 @@ continuously as you work — whenever you learn something worth recording.
 
 ## Session Start: Read Your Notes
 
-First thing, every session — read `.claude/napkin.md` before doing anything
+First thing, every session — read `.claude/napkin.md` or `.codex/napkin.md` before doing anything
 else. Internalize what's there and apply it silently. Don't announce that you
 read it. Just apply what you know.
 
